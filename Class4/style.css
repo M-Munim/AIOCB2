@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    position: relative;
+}
+
+
+header {
+    position: sticky;
+    top: 0px;
+}
+
+nav {
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+
+    /* positioning */
+
+}
+
+.logo {
+    font-size: 36px;
+    color: red;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    color: white;
+}
+
+/* parent container */
+.cards {
+    display: flex;
+    gap: 10px;
+
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid black;
+    /* padding: 10px; */
+    height: 390px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.upper img {
+    width: 100%;
+
+}
+
+.lower {
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.lower h1 {
+    margin: 10px 0px;
+      text-shadow: 2px 2px 5px rgba(223, 19, 19, 0.3);
+
+}
+
+.lower hr {
+    margin: 5px 0px;
+}
+
+.links {
+    margin: 10px 0px;
+}
+
+.links a i {
+    font-size: 24px;
+}
+
+.section {
+    height: 100vh;
+}
+
+.fa-whatsapp {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+    position: fixed;
+    z-index: 30;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+.section2 {
+
+    height: 100vh;
+    position: relative;
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: azure;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    left: 10px;
+}
+
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    position: absolute;
+    z-index: 3;
+}
+
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    scale: 1.2;
+    /* border: none; */
+}
+
+li:nth-child(odd) {
+    background: #842c2c;
+
+}
+
+
+.para::after {
+  content: "❌ ";
+}
+
+.para::first-letter {
+  font-size: 200%;
+  color: red;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .logo {
+        font-size: 24px;
+        color: aquamarine;
+        text-transform: lowercase;
+    }
+}
